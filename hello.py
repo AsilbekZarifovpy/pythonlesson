@@ -224,16 +224,16 @@
 # print(sorted(key_list))
 
 
-davlatlar = {
-    "o'zbekiston":'toshkent',
-    'aqsh':'washington d.c.',
-    'rossiya':'moskva',
-    'tojikiston':'dushanbe',
-    "qirg'iziston":'bishkek',
-    'qozog\'iston':'nursulton',
-    'malayziya':'kuala-lumpur',
-    'singapur':'sungapur',
-    'italiya':'rim'}
+# davlatlar = {
+#     "o'zbekiston":'toshkent',
+#     'aqsh':'washington d.c.',
+#     'rossiya':'moskva',
+#     'tojikiston':'dushanbe',
+#     "qirg'iziston":'bishkek',
+#     'qozog\'iston':'nursulton',
+#     'malayziya':'kuala-lumpur',
+#     'singapur':'sungapur',
+#     'italiya':'rim'}
 # for poytaxt in sorted(davlatlar.values()):
 #     print(poytaxt)
 
@@ -241,9 +241,128 @@ davlatlar = {
 # for davlat in sorted(davlatlar.keys()):
 #     print(davlat)
 
-davlat_nomi = str(input("DaVLAT NOMINI KIRITING "))
-if davlat_nomi.lower() in davlatlar.keys():
-    print(davlatlar[davlat_nomi.lower()].upper())
+# davlat_nomi = str(input("DaVLAT NOMINI KIRITING "))
+# if davlat_nomi.lower() in davlatlar.keys():
+#     print(davlatlar[davlat_nomi.lower()].upper())
 
-else:
-    print(davlat_nomi.upper() + "degan davlat list da yuq")
+# else:
+#     print(davlat_nomi.upper() + "degan davlat list da yuq")
+
+
+
+# car0 = {
+#         'model':'lacetti',
+#         'rang':'oq',
+#         'yil':2018,
+#         'narh':13000,
+#         'km':50000,
+#         'korobka':'avtomat'
+#         }
+
+# car1 = {
+#         'model':'nexia 3',
+#         'rang':'qora',
+#         'yil':2015,
+#         'narh':9000,
+#         'km':89000,
+#         'korobka':'mexanika'
+#         }
+
+# car2 = {
+#         'model':'gentra',
+#         'rang':'qizil',
+#         'yil':2019,
+#         'narh':15000,
+#         'km':20000,
+#         'korobka':'mexanika'
+#         }
+# cars = [car0, car1, car2]
+# for car in cars:
+#     print(f"{car['model'].title()}, "
+#           f"{car['rang']} rang, "
+#           f"{car['yil']}-yil, {car['narh']}$")
+
+
+# ism = input("Ismingiz nma? ")
+# savol = f"Salom, {ism.title()} , Yoshingiz nechchida "
+# yosh = input(savol)
+# yosh = int(yosh)
+
+# raqam = 1
+# while raqam<5:
+#     print(raqam)
+#     raqam += 1
+
+
+# print("Kiritilgan sonni kvadratini qaytaradi ")
+# print("Dastur exit yozmagunizcha ishlaydi ")
+# savol = "Istalgan son kiriting "
+# qiymat = ''
+
+# while qiymat != 'exit':
+#     qiymat = input(savol)
+#     if qiymat != 'exit':
+#         print(int(qiymat)**2)
+
+# print("dastur tugadi")
+
+
+# sonlar = range(11)
+# for son in sonlar:
+#     if son == 5:
+#         continue
+#     print(son)
+
+
+#task1
+
+# kitob_nomi = ''
+# savol = 'Kitob nomi yozing '
+
+# while kitob_nomi != 'stop':
+#     kitob_nomi = input(savol)
+#     if kitob_nomi.lower() != 'stop':
+#         print(kitob_nomi)
+#     else:
+#         print("Siz stop so'zini kiritidingiz")
+
+# savol = "Yoshingizni kiriting: "
+
+# while True:
+#     qiymat = input(savol)
+#     if qiymat == 'exit' or qiymat == 'quit':
+#         break
+#     yosh = int(qiymat)
+    
+#     if yosh<7:
+#         narh = 2000
+#     elif 7<=yosh<18:
+#         narh = 3000
+#     elif 18<=yosh<65:
+#         narh = 10000
+#     else: narh = 0
+    
+#     if narh==0:
+#         print("Sizga chipta bepul")
+#     else:
+#         print(f"Chipta {narh} so'm")
+
+
+savol ="Kiritilgan sonning ildizini qaytaruvchi dastur.\n"
+savol += "Musbat son kiriting "
+savol += "(dasturni to'xtatish uchun 'exit' deb yozing): "
+
+while True:
+    qiymat = input(savol)
+    if str(qiymat) == 'exit':
+        break
+    elif float(qiymat) < 0 :
+        continue
+    else:
+        ildiz = float(qiymat)**(0.5)
+        print(f"{qiymat} ning ildizi {ildiz} ga teng")
+
+
+
+
+
