@@ -143,18 +143,107 @@
 
 
 
-a = int(input("1-Son Kiriting "))
-b = int(input("2-Son Kiriting "))
+# a = int(input("1-Son Kiriting "))
+# b = int(input("2-Son Kiriting "))
 
-if a==b:
-    print("Sonlar teng ekan")
-
-
+# if a==b:
+#     print("Sonlar teng ekan")
 
 
+#15.03.2025 Dict
+# car = {'model':'BMW', 'rangi':'qora'}
+# print(car['model'])
+
+# talaba_1 = {}
+# talaba_1['ism'] = 'qobil rasulov'
+# talaba_1['kurs'] = 3
+# car1= car.get('model1', 'Bu dict da yuq')
+# print(car1)
+
+
+#task one
+# otam = {'ismi':'mavlutdin', 'tyil':1954,'viloyat':'samarqand'}
+# tyil = otam['tyil']
+# vil = otam['viloyat']
+# print(f"Otamning ismi {otam['ismi'].title()}, {tyil}-yilda, {vil.title()} viloyatida tug'ilgan")
+
+# taomlar = {
+#     'ali':'osh',
+#     'vali':'shashlik',
+#     'hasan':"lag'mon",
+#     'husan':"mastava",
+#     'olim':"somsa"
+#     }
+
+# taom = taomlar['ali']
+# print(f"Alining sevimli taomi {taom}")
+
+# python_izohli_lugati = {
+#     'integer':"Butun son",
+#     'float':"O'nlik son",
+#     'string':"Matn",
+#     'list':"Ro'yxat",
+#     'tuple':"O'zgarmas ro'yxat"}
+# # print(python_izohli_lugati['tuple'])
+
+# kalit = input("Kalit so'z kiriting:").lower()
+# print(python_izohli_lugati.get(kalit,"Bunday so'z mavjud emas"))
+
+# kalit = input("Kalit so'z kiriting:").lower()
+# tarjima = python_izohli_lugati.get(kalit)
+# if tarjima==None:
+#     print("Bunday so'z mavjud emas")
+# else:
+#     print(f"{kalit.title()} so'zi {tarjima} deb tarjima qilinadi")
 
 
 
+# talaba_0 = {
+#     'ism':'alijon',
+#     'familiya':'shamshiyev',
+#     'yosh':22,
+#     'fakultet':'matematika',
+#     'kurs':4
+#     }
+# for kalit, qiymat in talaba_0.items():
+#     print(f"Kalit: {kalit}")
+#     print(f"Qiymat: {qiymat} \n")
+
+# 1- task
+# python_words = {
+#     'integer':'Butun son',
+#     'float': "O'nlik son",
+#     'boolean':"Mantiqiy qiymat",
+#     'for':"Biror amalni qayta-qayta bajarish tsikli",
+#     'if':'Shartlarni tekshirish operatori'}
+# key_list = []
+
+# for key in python_words.keys():
+#     key_list.append(key)
+    
+# print(sorted(key_list))
 
 
+davlatlar = {
+    "o'zbekiston":'toshkent',
+    'aqsh':'washington d.c.',
+    'rossiya':'moskva',
+    'tojikiston':'dushanbe',
+    "qirg'iziston":'bishkek',
+    'qozog\'iston':'nursulton',
+    'malayziya':'kuala-lumpur',
+    'singapur':'sungapur',
+    'italiya':'rim'}
+# for poytaxt in sorted(davlatlar.values()):
+#     print(poytaxt)
 
+
+# for davlat in sorted(davlatlar.keys()):
+#     print(davlat)
+
+davlat_nomi = str(input("DaVLAT NOMINI KIRITING "))
+if davlat_nomi.lower() in davlatlar.keys():
+    print(davlatlar[davlat_nomi.lower()].upper())
+
+else:
+    print(davlat_nomi.upper() + "degan davlat list da yuq")
